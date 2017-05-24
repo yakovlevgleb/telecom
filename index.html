@@ -1,50 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Telecom</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Telecom</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-  <body>
-
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <a href="#"><img src="img/logo.png" alt="telecom"></a>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__items">
-            <li>
-              <a class="nav__link" href="#">Оборудование</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Услуги</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">О компании</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Партнеры</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Контакты</a>
-            </li>
-            <li class="nav__sale">
-              <a class="nav__link" href="#">Sale %</a>
-            </li>
-          </ul>
-        </nav>
-
-        <span class="header__phone">+7(495)222-33-22</span>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a href="#"><img src="img/logo.png" alt="telecom"></a>
       </div>
-    </header>
 
-    <main></main>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li>
+            <a class="main-nav__link" href="#">Оборудование</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="#">Услуги</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="#">О компании</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="#">Партнеры</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="main-nav__sale">
+            <a class="main-nav__link" href="#">Sale %</a>
+          </li>
+        </ul>
+      </nav>
 
-  </body>
+      <a class="header__phone" href="tel:+74952223322">+7(495) 222-33-22</a>
+    </div>
+  </header>
+  <!-- HEADER END-->
+
+  <main>
+
+    <!-- NEWS -->
+    <section class="news">
+      <div class="news__container">
+        <h2 class="news__header">Итоги 2016 года от ceo Colary <span>Булатого Романа</span></h2>
+        <p class="news__comment">Наш генеральный директор в своем личном аккаунте подвел итоги работы всего нашего агентства в очень интересном формате подачи.</p>
+        <span class="news__hashtag">#hny</span>
+        <span class="news__hashtag">#снг</span>
+        <span class="news__hashtag">#морозснежкомукутывал</span>
+        <a class="news__btn btn" href="#">Узнать больше</a>
+      </div>
+    </section>
+    <!-- NEWS END -->
+
+    <!-- POSTS -->
+    <section class="posts">
+      <div class="posts__container">
+
+        <article class="posts__item posts__item--img">
+          <img src="img/stachka.jpg" alt="Стачка" width="357" height="203">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Голосование за доклад на «Стачке»</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады, которые потенциальные участники предложили общественности от своего имени.</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#всенастачку</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="posts__item posts__item--normal">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Поступление оборудования!</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады открылось голосование за доклады</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#всенастачку</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="posts__item posts__item--normal">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Поступление оборудования!</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады открылось голосование за доклады</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#всенастачку</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="posts__item posts__item--2016">
+          <a href="#">
+            <h2>Итоги 2016</h2>
+          </a>
+        </article>
+
+        <article class="posts__item posts__item--ads">
+          <h2>Сети операторского класса</h2>
+          <span>продукты бренда</span>
+        </article>
+
+        <article class="posts__item posts__item--normal">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Рейтинг оборудования</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады открылось голосование за доклады</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#рейтинги</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="posts__item posts__item--normal">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Рейтинг оборудования</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады открылось голосование за доклады</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#рейтинги</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="posts__item posts__item--img">
+          <img src="img/sputnik.jpg" alt="Стачка" width="357" height="203">
+          <div class="posts__info">
+            <time>27.03.2017</time>
+            <h2 class="posts__header">Голосование за доклад на «Стачке»</h2>
+            <p class="posts__comment">На сайте международной it-конференции "Стачка 2017" открылось голосование за доклады, которые потенциальные участники предложили общественности от своего имени.</p>
+            <div class="posts__link">
+              <a href="#">Узнать больше</a>
+              <span class="posts__hashtag">#рейтинги #голосования</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <!-- POSTS END -->
+
+  </main>
+
+
+</body>
 
 </html>

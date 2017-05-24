@@ -1,0 +1,144 @@
+/* ------------------------------------------ */
+/* POSTS BLOCK
+/* ------------------------------------------ */
+
+.posts {
+  background-color: @posts-back;
+  color: @black;
+  padding: 25px 0;
+
+  &__container {
+    .container();
+    padding: 0 5px;
+  }
+}
+
+.posts__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:hover {
+    box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
+  }
+}
+
+.posts__item--2016 {
+  position: relative;
+  min-width: 231px;
+  min-height: 440px;
+  background-image: url("../img/rj-inactive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: @white;
+  }
+
+  h2 {
+    display: none;
+    align-self: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/watch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    left: 50%;
+    top: 50%;
+  }
+
+  &:hover {
+    background-image: url("../img/rj-hover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+      display: block;
+      font-family: "ProximaNovaSemibold", Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.posts__item--ads {
+  min-width: 231px;
+  min-height: 440px;
+  background-image: url("../img/alcatel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: "ProximaNovaSemibold", Arial, sans-serif;
+    font-size: 24px;
+  }
+}
+
+.posts__info {
+  background-color: @white;
+  padding: 28px 20px 33px;
+
+  time {
+    font-size: 13px;
+    font-weight: 300;
+    color: @gray;
+  }
+}
+
+.posts__header {
+  font-family: "ProximaNovaBold", Arial, sans-serif;
+  font-size: 18px;
+  color: @black;
+  margin-bottom: 24px;
+  margin-top: 26px;
+}
+
+.posts__comment {
+  font-style: italic;
+  font-size: 13px;
+  color: @black;
+  margin-bottom: 27px;
+}
+
+.posts__link {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid @salad;
+    color: @salad;
+  }
+}
+
+.posts__hashtag {
+  font-weight: 300;
+  font-size: 13px;
+  align-items: flex-end;
+  color: @gray;
+  align-self: center;
+}

@@ -1,12 +1,51 @@
+/* ------------------------------------------ */
+/* HEADER BLOCK
+/* ------------------------------------------ */
 .header {
   background-color: @background-dark;
   color: @white;
 }
 
-.nav__link {
-
-}
-
 .header__wrapper {
   .container ();
+  align-content: center;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin-bottom: 18px;
+}
+
+.main-nav {
+  margin-bottom: 18px;
+}
+
+.main-nav__items {
+  list-style: none;
+
+  li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  color: @white;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header__phone {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+  color: @white;
+  text-align: center;
 }
