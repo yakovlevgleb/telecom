@@ -79,20 +79,30 @@
 }
 
 .posts__item--ads {
-  min-width: 231px;
+  max-width: 231px;
   min-height: 440px;
   background-image: url("../img/alcatel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 29px 15px 0;
 
   h2 {
     font-family: "ProximaNovaSemibold", Arial, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
+    color: @ads-gray;
+    margin-bottom: 17px;
+  }
+
+  span {
+    font-family: "ProximaNovaSemibold", Arial, sans-serif;
+    font-size: 15px;
+    color: @ads-graylighter;
   }
 }
 
