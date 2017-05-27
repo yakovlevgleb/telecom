@@ -4,7 +4,7 @@
 .news {
   background-color: @background-dark;
   color: @white;
-  padding: 45px 0;
+  padding: 50px 0;
   background-image: url("../img/santa.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -15,26 +15,34 @@
 }
 
 .news__header {
+  display: inline-block;
+  vertical-align: top;
   font-family: "ProximaNovaBold", Arial, sans-serif;
   font-size: 25px;
   line-height: 30px;
-  color: @white;
-  margin-bottom: 45px;
+  color: @salad;
+  margin-bottom: 40px;
 
   span {
-    color:@salad;
+    color: @white;
+    display: block;
   }
 }
 
 .news__comment {
-  font-weight: 300;
-  font-size: 15px;
-  color: @white;
-
-  margin-bottom: 35px;
+  p {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 15px;
+    color: @white;
+    margin-bottom: 35px;
+  }
 }
 
 .news__hashtag {
+  display: inline-block;
+  vertical-align: top;
   font-weight: 300;
   font-size: 15px;
   color: @salad;
@@ -43,12 +51,44 @@
 }
 
 .news__btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   font-weight: 300;
   font-size: 15px;
   color: @salad;
   text-decoration: none;
   border: 1px solid @salad;
-  padding: 9px 16px;
-  padding-right: 55px;
+  padding: 9px 55px 9px 16px;
   max-width: 181px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 21px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/right-arrow.png");
+    background-repeat: no-repeat;
+    right: 6px;
+    top: 22px;
+  }
+}
+@media @tablet-widths {
+  .news {
+    padding: 70px 0;
+  }
+
+  .news__header {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .news__comment {
+    padding-right: 300px;
+  }
+
+  .news__btn {
+    display: block;
+  }
 }

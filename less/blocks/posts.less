@@ -1,7 +1,6 @@
 /* ------------------------------------------ */
 /* POSTS BLOCK
 /* ------------------------------------------ */
-
 .posts {
   background-color: @posts-back;
   color: @black;
@@ -9,20 +8,12 @@
 
   &__container {
     .container();
-    padding: 0 5px;
   }
 }
 
 .posts__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
-
-  &:hover {
-    box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.2);
-  }
 }
 
 .posts__item--img {
@@ -34,16 +25,14 @@
 
 .posts__item--2016 {
   position: relative;
-  min-width: 231px;
+  max-width: 231px;
   min-height: 440px;
   background-image: url("../img/rj-inactive.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 
   a {
     text-decoration: none;
@@ -74,7 +63,12 @@
     background-repeat: no-repeat;
 
     h2 {
-      display: block;
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      right: -10px;
+      top: 50%;
       font-family: "ProximaNovaSemibold", Arial, sans-serif;
       font-size: 24px;
     }
@@ -93,10 +87,7 @@
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  justify-content: flex-start;
   padding: 29px 15px 0;
 
   h2 {
@@ -115,7 +106,7 @@
 
 .posts__info {
   background-color: @white;
-  padding: 28px 20px 33px;
+  padding: 28px 15px 33px;
 
   time {
     font-size: 13px;
@@ -140,9 +131,6 @@
 }
 
 .posts__link {
-  display: flex;
-  justify-content: space-between;
-
   a {
     font-weight: 300;
     font-size: 15px;
@@ -153,10 +141,40 @@
 }
 
 .posts__hashtag {
+  float: right;
+  padding-top: 2px;
+  text-align: right;
   font-weight: 300;
   font-size: 13px;
-  align-items: flex-end;
   color: @gray;
-  align-self: center;
 }
-@media @tablet-widths {}
+@media @tablet-widths {
+  .posts__container {
+    padding: 18px 5px;
+  }
+
+  .posts__item {
+    float: left;
+    margin: 9px;
+
+    &--normal {
+      width: 357px;
+    }
+
+    &--img {
+      max-width: 357px;
+    }
+  }
+
+  .posts__info {
+    padding-bottom: 23px;
+  }
+
+  .posts__header {
+    margin-top: 15px;
+  }
+
+  .posts__item--2016 {
+    min-width: 231px;
+  }
+}

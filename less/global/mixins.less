@@ -1,10 +1,7 @@
 .container {
   width: 320px;
-  display: flex;
   margin: 0 auto;
-  padding: 18px 30px;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  padding: 18px 10px;
   @media @tablet-widths {
     width: 768px;
     padding: 18px 30px;
@@ -22,4 +19,12 @@
     max-width: 960px;
     margin: 0 auto;
   }
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
