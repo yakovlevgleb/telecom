@@ -118,6 +118,7 @@
   .footer__links {
     display: inline-block;
     vertical-align: top;
+
     li {
       display: inline-block;
       vertical-align: top;
@@ -130,5 +131,62 @@
     vertical-align: top;
     width: 100%;
     margin: 0 auto;
+  }
+}
+@media @desktop-widths {
+  .footer {
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+
+  .footer__contacts {
+    text-align: left;
+    margin: 0;
+    width: 455px;
+
+    a {
+      margin-bottom: 11px;
+    }
+  }
+
+  .footer__adress {
+    margin-bottom: 40px;
+  }
+
+  .footer__adress {
+    &::after {
+      bottom: 30px;
+      left: 2px;
+      width: 354px;
+    }
+  }
+
+  .footer__nav {
+    margin: 0;
+    width: auto;
+    text-align: left;
+  }
+
+  .footer__links {
+    width: 357px;
+    display: inline-block;
+    vertical-align: top;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 47%;
+      text-align: left;
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer__copyright {
+    width: 171px;
+    display: inline;
+    float: left;
+    text-align: left;
+    padding-top: 82px;
+    padding-left: 2px;
   }
 }
