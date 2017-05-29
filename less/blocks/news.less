@@ -1,6 +1,7 @@
 /* ------------------------------------------ */
 /* NEWS BLOCK
 /* ------------------------------------------ */
+
 .news {
   background-color: @background-dark;
   color: @white;
@@ -59,7 +60,7 @@
   color: @salad;
   text-decoration: none;
   border: 1px solid @salad;
-  padding: 9px 55px 9px 16px;
+  padding: 7px 55px 8px 17px;
   max-width: 181px;
 
   &::before {
@@ -70,7 +71,7 @@
     transform: translate(-50%, -50%);
     background-image: url("../img/right-arrow.png");
     background-repeat: no-repeat;
-    right: 6px;
+    right: 2px;
     top: 22px;
   }
 }
@@ -90,5 +91,29 @@
 
   .news__btn {
     display: block;
+  }
+}
+@media @desktop-widths {
+  .news {
+    padding: 150px 0;
+    padding-bottom: 161px;
+  }
+
+  .news__header {
+    margin-bottom: 47px;
+  }
+
+  .news__comment {
+    padding-right: 600px;
+    margin-bottom: 11px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .news__hashtag {
+    margin-right: 10px;
+    margin-bottom: 55px;
   }
 }
