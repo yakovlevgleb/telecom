@@ -1,6 +1,7 @@
 /* ------------------------------------------ */
 /* POSTS BLOCK
 /* ------------------------------------------ */
+
 .posts {
   background-color: @posts-back;
   color: @black;
@@ -176,5 +177,55 @@
 
   .posts__item--2016 {
     min-width: 231px;
+  }
+}
+@media @desktop-widths {
+  .posts__item {
+    &:nth-child(1) {
+      margin: 0 10px 10px 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0 8px 10px 11px;
+    }
+
+    &:nth-child(3) {
+      margin: 0 0 7px 9px;
+    }
+
+    &:nth-child(4) {
+      margin: 0 0 10px 9px;
+    }
+
+    &:nth-child(5) {
+      margin: 0;
+    }
+
+    &:nth-child(6) {
+      margin: 0;
+    }
+
+    &:nth-child(7) {
+      margin: 0;
+    }
+
+    &:nth-child(8) {
+      margin: 0;
+    }
+  }
+
+  .abc {
+
+  }
+
+  .posts__container {
+    padding: 0;
+  }
+
+  .posts__item {}
+
+  .posts__item--tall {
+    width: auto;
+    max-width: 357px;
   }
 }
