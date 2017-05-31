@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
   var i = 0;
 
   setInterval(function() {
-    $('.news').animate({},function() {
+    $('.news').animate({}, function() {
       if (i >= images.length) {
         i = 0;
       }
