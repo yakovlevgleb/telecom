@@ -1,6 +1,7 @@
 /* ------------------------------------------ */
 /* POSTS BLOCK
 /* ------------------------------------------ */
+
 .posts {
   background-color: @posts-back;
   color: @black;
@@ -197,6 +198,20 @@
 
   .posts__item--2016 {
     min-width: 231px;
+  }
+
+  .posts__item {
+    &:nth-child(3) {
+      float: right;
+    }
+  }
+
+  .posts__wrap {
+    .posts__item {
+      &:nth-child(1) {
+        float: right;
+      }
+    }
   }
 }
 @media @desktop-widths {
